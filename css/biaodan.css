@@ -1,0 +1,95 @@
+#main {
+    text-align: center;
+}
+
+
+/* h1样式 */
+
+#main h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+/* 表单样式 */
+
+#biaodan {
+    display: inline-block;
+}
+
+#biaodan form {
+    text-align: left;
+}
+
+#biaodan form p {
+    line-height: 30px;
+    color: #333;
+    font-size: 14px;
+}
+
+#biaodan form input {
+    width: 300px;
+    border: 1px solid #ccc;
+    height: 28px;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.tijiao {
+    margin-top: 20px;
+    background-color: rgb(107, 107, 107);
+    display: inline-block;
+    height: 30px !important;
+    color: #fff;
+    border: 0px;
+}
+
+.login_zhuce {
+    line-height: 30px;
+}
+
+.login_zhuce a {
+    text-decoration: none;
+    color: rgb(118, 115, 115);
+    font-size: 12px;
+}
+
+.fuxuan {
+    width: 16px !important;
+    height: 16px !important;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.zi {
+    margin-right: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+select {
+    width: 300px;
+    border: 1px solid #ccc;
+    height: 28px;
+    border-radius: 4px;
+}
+/* 响应式样式 */
+@media (max-width: 768px) {
+    #main{
+        width:100%;
+    }
+    #mian_title{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mian_title table,#mini_daohang{
+
+        width: 100%;
+    }
+}

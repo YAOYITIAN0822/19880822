@@ -1,0 +1,249 @@
+﻿/* 清除全局格式 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 头部背景图 */
+#title {
+    width: 100%;
+    height: 80vh; /* Viewport height to adjust the height relative to the screen size */
+    background: url(../image/banner.jpg) no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
+}
+
+@media (max-width: 768px) {
+    #title {
+        height: 50vh; /* Increase height on smaller screens for better visibility */
+    }
+}
+
+/* 头部导航栏 */
+#nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#nav_title, #nav_right, #menu_button {
+    display: block; /* 隐藏原始导航项和菜单按钮 */
+}
+
+#nav_title a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 5px;
+}
+
+
+#nav_right input {
+    border: 0;
+    border-radius: 15px;
+    height: 28px;
+    padding-left: 10px;
+}
+
+#nav_right input::placeholder {
+    color: rgb(159, 159, 159);
+}
+
+#nav_right a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+/* Logo 字体 */
+#logo {
+    font-size: 24px;
+    line-height: 50px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid rgba(204, 204, 204, 0.37);
+    white-space: nowrap;
+}
+
+/* 菜单按钮样式 */
+#menu_button {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* 默认隐藏，媒体查询中显示 */
+    color: #fff;
+}
+
+/* 移动端菜单样式 */
+#mobile_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000; /* 确保菜单位于其他元素之上 */
+}
+/* 关闭按钮样式 */
+#close_button {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#mobile_menu a, #mobile_menu input {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#mobile_menu input {
+    border: 0;
+    border-radius: 15px;
+    height: 28px;
+    padding-left: 10px;
+}
+
+#mobile_menu input::placeholder {
+    color: rgb(159, 159, 159);
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    #menu_button,#mobile_menu {
+        display: block; /* 小屏幕上显示菜单按钮 */
+    }
+
+    #nav_title, #nav_right {
+        display: none; /* 小屏幕上隐藏原始导航 */
+    }
+}
+
+/* 全局h1标题 */
+h1 {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 60px;
+    border-bottom: 2px solid #333;
+}
+
+/* 底部导航栏开始 */
+footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1d8eca;
+}
+
+#footer {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+#logo2 {
+    position: absolute;
+    font-size: 30px;
+    line-height: 50px;
+    padding-right: 30px;
+    margin-right: 30px;
+    color: #fff;
+}
+
+#time {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* 小导航栏 */
+#mini_daohang {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(107, 107, 107);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#mini_daohang a {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+}
+
+#mini_daohang a:hover {
+    color: #1d8eca;
+}
+
+#mini_daohang span {
+    color: rgb(107, 107, 107);
+    margin: 0 10px;
+}
+
+/* 中间内容区域 */
+#main {
+    width: 1200px;
+    background-color: rgb(248, 247, 247);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#main p {
+    margin-top: 10px;
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    #index_jianjie #index_jieshao, #index_jianjie #index_renwu,#index_jianjie #index_renwu img {
+        width: 100%;
+        height: auto;
+    }
+    #index_zuopin,#index_jianjie,#index_main,#index_xiezhen,#index_xiezhen ul{
+        width: 100%!important;
+    }
+    #index_main{
+        overflow: hidden;
+    }
+    #index_xiezhen ul li{
+        margin-left:40px!important;
+    }
+    #index_zuopin ul,#index_xiezhen ul #one_xiezhen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%!important;
+    }
+    #footer{
+        width:100%;
+    }
+    
+}

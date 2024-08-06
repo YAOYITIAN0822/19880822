@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚译添</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jianjie.css">
+</head>
+
+<body>
+     <!-- ’头部导航栏 -->
+    <div id="title">
+        <div id="nav">
+            <!-- 头部logo -->
+            <div id="logo">
+            姚译添
+            </div>
+            <!-- 头部导航栏 -->
+            <div id="nav_title">
+                <a href="./index.html">首页</a>
+                <a href="./jianjie.html">简介</a>
+                <a href="./movies.html">个人作品</a>
+                <a href="./sp.html">视频片段</a>
+                <a href="./message.html">留言</a>
+            </div>
+            <div id="nav_right">
+                <input type="text" placeholder="关键词搜索">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
+            </div>
+            <!-- 菜单按钮 -->
+            <div id="menu_button" onclick="toggleMenu()">☰</div>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile_menu">
+        <!-- 关闭按钮 -->
+        <div id="close_button" onclick="toggleMenu()">×</div>
+        <input type="text" placeholder="关键词搜索">
+        <a href="./index.html">首页</a>
+        <a href="./jianjie.html">简介</a>
+        <a href="./movies.html">个人作品</a>
+        <a href="./sp.html">视频片段</a>
+        <a href="./message.html">留言</a>
+        <a href="./login.html">登录</a>
+        <a href="./register.html">注册</a>
+    </div>
+    <!-- 小导航栏 -->
+    <div id="mini_daohang">
+        当前位置：<a href="./index.html">首页</a><span>></span><a href="./jianjie.html">简介</a>
+    </div>
+    <!-- 中间内容区域 -->
+    <div id="main">
+        <div id="mian_title">
+            <img src="./image/r1.jpg" alt="">
+            <h2>姚译添<span>1988年8月22日出生，毕业于浙江传媒学院</span></h2>
+            <!-- 表格 -->
+            <table>
+                <tr>
+                    <td style="width: 100px">中文名</td>
+                    <td style="width: 240px">姚译添</td>
+                    <td style="width: 100px">职业</td>
+                    <td>综艺导演</td>
+                </tr>
+              
+                <tr>
+                    <td>别 名</td>
+                    <td>小姚，译添</td>
+                    <td >代表作品</td>
+                    <td>奔跑吧，嗨放派，各位游客请注意，爸爸回来了，麦霸英雄汇，中国梦想秀等</td>
+                </tr>
+                <tr>
+                    <td>国 籍</td>
+                    <td>中国</td>
+                </tr>
+                <tr>
+                    <td>出生地</td>
+                    <td>山西</td>
+                </tr>
+                <tr>
+                    <td>出生日期</td>
+                    <td>1988年8月22日</td>
+                </tr>
+                
+                <tr>
+                   
+                    <td>星 座</td>
+                    <td>狮子座</td>
+                </tr>
+            </table>
+            <h3>个人简介</h3>
+            <div class="jianjie">
+                <p>姚译添，出生于1988年，毕业于浙江传媒学院，现任浙江卫视节目中心副主任。</p>
+                <p>
+                    先后参与制作《麦霸英雄汇》《中国梦想秀》《爸爸回来了》《奔跑吧兄弟》《奔跑吧》等大型节目，是浙江卫视大型节目年轻的总导演。
+                </p>
+                <p>
+                    2017年，姚译添领衔出演浙江卫视台歌《梦想天空分外蓝》“员工版”MV。2020年，成立浙江卫视节目中心“星图工作室”。2021年8月，担任奇趣实验真人秀《嗨放派》总导演。2022年5月13日，执导的户外竞技真人秀《奔跑吧第六季》播出。
+                </p>
+                
+            </div>
+            <h3>人物经历</h3>
+            <div id="yanyijingli">
+               
+                <p>2010年，从浙江传媒学院文化产业管理专业毕业后考入浙江广播电视集团，被分配到浙江卫视节目中心工作，一入台便参与制作了每周直播的《麦霸英雄汇》。</p>
+                <p>
+                    2011~2013 年，参与制作了六季《中国梦想秀》；
+                    2014年开始，参与制作了两季《爸爸回来了》，第三、四季《奔跑吧兄弟》以及《奔跑吧》；
+                    2017年，“中国蓝”九周年，领衔出演浙江卫视台歌《梦想天空分外蓝》“员工版”MV。
+                </p>
+                <p>
+                    2018年，与陈学武共同担任浙江卫视燃情贺岁夜（《2018中国蓝燃情贺岁夜》）总导演；
+                    2019年，担任浙江卫视《各位游客请注意》总导演；
+                    2020年9月，成立浙江卫视节目中心“星图工作室”；
+                    2021年8月，担任奇趣实验体验类真人秀《嗨放派》总导演；
+                    2022年5月13日，执导的户外竞技真人秀《奔跑吧 第六季》播出。
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 底部版权运用js获取系统时间进行dom操作改变页面文字显示 -->
+    <footer>
+        <div id="footer">
+            <div id="logo2">
+               姚译添
+            </div>
+            <div id="banquan">
+                &copy;姚译添的主页
+            </div>
+            <div id="time" class="showTime">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/menu.js"></script>
+</html>

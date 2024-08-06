@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚译添</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/movies.css">
+</head>
+
+<body>
+    <!-- ’头部导航栏 -->
+    <div id="title">
+        <div id="nav">
+            <!-- 头部logo -->
+            <div id="logo">
+            姚译添
+            </div>
+            <!-- 头部导航栏 -->
+            <div id="nav_title">
+                <a href="./index.html">首页</a>
+                <a href="./jianjie.html">简介</a>
+                <a href="./movies.html">个人作品</a>
+                <a href="./sp.html">视频片段</a>
+                <a href="./message.html">留言</a>
+            </div>
+            <div id="nav_right">
+                <input type="text" placeholder="关键词搜索">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
+            </div>
+            <!-- 菜单按钮 -->
+            <div id="menu_button" onclick="toggleMenu()">☰</div>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile_menu">
+        <!-- 关闭按钮 -->
+        <div id="close_button" onclick="toggleMenu()">×</div>
+        <input type="text" placeholder="关键词搜索">
+        <a href="./index.html">首页</a>
+        <a href="./jianjie.html">简介</a>
+        <a href="./movies.html">个人作品</a>
+        <a href="./sp.html">视频片段</a>
+        <a href="./message.html">留言</a>
+        <a href="./login.html">登录</a>
+        <a href="./register.html">注册</a>
+    </div>
+    <!-- 小导航栏 -->
+    <div id="mini_daohang">
+        当前位置：<a href="./index.html">首页</a><span>></span><a href="./movies.html">影视作品</a>
+    </div>
+    <!-- 中间内容区域 -->
+    <div id="main">
+        <div id="main_movie">
+            <h3>综艺节目</h3>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./image/j1.jpg" alt="">
+                        <p>奔跑吧</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/j2.jpg" alt="">
+                        <p>嗨放派</p>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/j3.jpg" alt="">
+                        <p>各位游客请注意</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/j4.jpg" alt="">
+                        <p>爸爸回来了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/j5.jpg" alt="">
+                        <p>麦霸英雄汇</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/j6.jpg" alt="">
+                        <p>中国梦想秀</p>
+                    </a>
+                </li>
+            </ul>
+            <h3>工作照</h3>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./image/dy1.jpg" alt="">
+                                            </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/dy2.jpg" alt="">
+                        
+                       
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/dy3.jpg" alt="">
+                        
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/dy4.jpg" alt="">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/dy5.jpg" alt="">
+                       
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/dy6.jpg" alt="">
+                        
+                       
+                    </a>
+                </li>
+            </ul>
+           
+            <h3>社交媒体及参演作品</h3>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./image/yy1.jpg" alt="">
+                        <p>微博</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/yy2.jpg" alt="">
+                        <p>抖音</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/yy3.jpg" alt="">
+                        <p>小红书</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/yy4.jpg" alt="">
+                        <p>浙江卫视台歌《梦想天空分外蓝》“员工版</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/yy5.jpg" alt="">
+                        <p>浙江卫视台歌《梦想天空分外蓝》“员工版</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./image/yy6.jpg" alt="">
+                        <p>浙江卫视台歌《梦想天空分外蓝》“员工版</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部版权运用js获取系统时间进行dom操作改变页面文字显示 -->
+    <footer>
+        <div id="footer">
+            <div id="logo2">
+               姚译添
+            </div>
+            <div id="banquan">
+                &copy;姚译添的主页
+            </div>
+            <div id="time" class="showTime">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/menu.js"></script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚译添</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sp.css">
+</head>
+
+<body>
+    <!-- ’头部导航栏 -->
+    <div id="title">
+        <div id="nav">
+            <!-- 头部logo -->
+            <div id="logo">
+            姚译添
+            </div>
+            <!-- 头部导航栏 -->
+            <div id="nav_title">
+                <a href="./index.html">首页</a>
+                <a href="./jianjie.html">简介</a>
+                <a href="./movies.html">个人作品</a>
+                <a href="./sp.html">视频片段</a>
+                <a href="./message.html">留言</a>
+            </div>
+            <div id="nav_right">
+                <input type="text" placeholder="关键词搜索">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
+            </div>
+            <!-- 菜单按钮 -->
+            <div id="menu_button" onclick="toggleMenu()">☰</div>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile_menu">
+        <!-- 关闭按钮 -->
+        <div id="close_button" onclick="toggleMenu()">×</div>
+        <input type="text" placeholder="关键词搜索">
+        <a href="./index.html">首页</a>
+        <a href="./jianjie.html">简介</a>
+        <a href="./movies.html">个人作品</a>
+        <a href="./sp.html">视频片段</a>
+        <a href="./message.html">留言</a>
+        <a href="./login.html">登录</a>
+        <a href="./register.html">注册</a>
+    </div>
+    <!-- 小导航栏 -->
+    <div id="mini_daohang">
+        当前位置：<a href="./index.html">首页</a><span>></span><a href="./photo.html">视频片段</a>
+    </div>
+    <!-- 中间内容区域 浮动布局-->
+    <div id="main">
+        <div id="mian_sp">
+            <div class="video-container">
+                <video src="videos/3.mp4" controls></video>
+            </div>
+            <div class="video-container">
+                <video src="videos/1.mp4" controls></video>
+            </div>
+            <div class="video-container">
+                <video src="videos/2.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+    <!-- 底部版权运用js获取系统时间进行dom操作改变页面文字显示 -->
+    <footer>
+        <div id="footer">
+            <div id="logo2">
+               姚译添
+            </div>
+            <div id="banquan">
+                &copy;姚译添的主页
+            </div>
+            <div id="time" class="showTime">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/menu.js"></script>
+</html>

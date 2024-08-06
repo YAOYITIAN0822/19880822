@@ -1,0 +1,96 @@
+/* 简介开始 */
+
+#mian_title h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-left: 20px solid #4F9CEE;
+    padding-left: 20px;
+}
+#mian_title h2 span {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #838384;
+}
+
+#mian_title img {
+    float: right;
+    width: 200px;
+}
+
+#mian_title h3 {
+    border-left: 20px solid #4F9CEE;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+/* 表格 */
+
+#mian_title table {
+    width: 800px;
+    border-collapse: collapse;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#mian_title table tr {
+    border-bottom: 1px dashed #ccc;
+}
+
+#mian_title table tr td:nth-child(2n-1) {
+    color: #999999;
+}
+
+.jianjie p {
+    font-size: 14px;
+    line-height: 30px;
+    text-indent: 28px;
+}
+
+
+/* 演艺经历 */
+
+#yanyijingli {
+    width: 100%;
+    text-align: center;
+}
+
+#yanyijingli img {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#renwusi {
+    float: right !important;
+    width: 200px !important;
+    margin: 30px 0px 30px 30px;
+}
+
+#yanyijingli p {
+    text-align: left;
+    font-size: 14px;
+    text-indent: 28px;
+    line-height: 30px;
+}
+/* 响应式样式 */
+@media (max-width: 768px) {
+    #mini_daohang,#main{
+        width:100%;
+    }
+    #mian_title{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mian_title table{
+        width: 100%;
+    }
+    #mian_title table td{
+        min-width: 100px;
+    }
+}

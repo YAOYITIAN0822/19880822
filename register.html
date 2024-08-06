@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚译添</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/biaodan.css">
+</head>
+
+<body>
+    <!-- ’头部导航栏 -->
+    <div id="title">
+        <div id="nav">
+            <!-- 头部logo -->
+            <div id="logo">
+            姚译添
+            </div>
+            <!-- 头部导航栏 -->
+            <div id="nav_title">
+                <a href="./index.html">首页</a>
+                <a href="./jianjie.html">简介</a>
+                <a href="./movies.html">个人作品</a>
+                <a href="./sp.html">视频片段</a>
+                <a href="./message.html">留言</a>
+            </div>
+            <div id="nav_right">
+                <input type="text" placeholder="关键词搜索">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
+            </div>
+            <!-- 菜单按钮 -->
+            <div id="menu_button" onclick="toggleMenu()">☰</div>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile_menu">
+        <!-- 关闭按钮 -->
+        <div id="close_button" onclick="toggleMenu()">×</div>
+        <input type="text" placeholder="关键词搜索">
+        <a href="./index.html">首页</a>
+        <a href="./jianjie.html">简介</a>
+        <a href="./movies.html">个人作品</a>
+        <a href="./sp.html">视频片段</a>
+        <a href="./message.html">留言</a>
+        <a href="./login.html">登录</a>
+        <a href="./register.html">注册</a>
+    </div>
+    <!-- 小导航栏 -->
+    <div id="mini_daohang">
+        当前位置：<a href="./index.html">首页</a><span>></span><a href="./register.html">注册</a>
+    </div>
+    <!-- 中间内容区域 浮动布局-->
+    <div id="main">
+        <h1>欢迎注册</h1>
+        <div id="biaodan">
+            <form action="">
+                <p>昵称:</p>
+                <input type="text" name="name">
+                <span>
+                    <p>爱好综艺类型：</p>
+                </span>
+                <input class="fuxuan" type="checkbox" name="checkbox1" vlaue="value1" checked />
+                <span class="zi">搞笑类</span>
+                <input class="fuxuan" type="checkbox" name="checkbox1" vlaue="value1" checked="checked" />
+                <span class="zi">益智类</span>
+                <input class="fuxuan" type="checkbox" name="checkbox1" vlaue="value1" checked="checked" />
+                <span class="zi">交友类</span>
+                <input class="fuxuan" type="checkbox" name="checkbox1" vlaue="value1" checked="checked" />
+                <span class="zi">探险类</span>
+                <br>
+                <p>喜欢的综艺:</p>
+                <select name="" id="">
+                    <option value="">奔跑吧</option>
+                    <option value="">嗨放派</option>
+                    <option value="">各位游客请注意</option>
+                    <option value="">爸爸回来了</option>
+                </select>
+                <p>账号:</p>
+                <input type="text" name="zhanghao">
+                <br>
+                <p>密码:</p>
+                <input name="password" type="text">
+                <p>确认密码:</p>
+                <input name="password" type="text">
+                <p>邮箱:</p>
+                <input name="emial" type="email">
+                <br>
+                <input class="tijiao" name="tijaio" type="button" value="提交">
+                <br>
+                <span class="login_zhuce">
+                    <a href="./login.html">已有账号？点击注册</a>
+                </span>
+            </form>
+        </div>
+    </div>
+    <!-- 底部版权运用js获取系统时间进行dom操作改变页面文字显示 -->
+    <footer>
+        <div id="footer">
+            <div id="logo2">
+               姚译添
+            </div>
+            <div id="banquan">
+                &copy;姚译添的主页
+            </div>
+            <div id="time" class="showTime">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/menu.js"></script>
+</html>

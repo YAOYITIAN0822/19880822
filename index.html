@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚译添</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- ’头部导航栏 -->
+    <div id="title">
+        <div id="nav">
+            <!-- 头部logo -->
+            <div id="logo">
+            姚译添
+            </div>
+            <!-- 头部导航栏 -->
+            <div id="nav_title">
+                <a href="./index.html">首页</a>
+                <a href="./jianjie.html">简介</a>
+                <a href="./movies.html">个人作品</a>
+                <a href="./sp.html">视频片段</a>
+                <a href="./message.html">留言</a>
+            </div>
+            <div id="nav_right">
+                <input type="text" placeholder="关键词搜索">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
+            </div>
+            <!-- 菜单按钮 -->
+            <div id="menu_button" onclick="toggleMenu()">☰</div>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile_menu">
+        <!-- 关闭按钮 -->
+        <div id="close_button" onclick="toggleMenu()">×</div>
+        <input type="text" placeholder="关键词搜索">
+        <a href="./index.html">首页</a>
+        <a href="./jianjie.html">简介</a>
+        <a href="./movies.html">个人作品</a>
+        <a href="./sp.html">视频片段</a>
+        <a href="./message.html">留言</a>
+        <a href="./login.html">登录</a>
+        <a href="./register.html">注册</a>
+    </div>
+    <!-- 轮播图 -->
+    <div class="lunbodiv">
+        <div class="box">
+            <div class="swiper" id="swiper">
+                <div class="swiper-time b"><img src="image/b1.jpg" alt=""></div>
+                <div class="swiper-time a"><img src="image/b2.jpg" alt=""></div>
+                <div class="swiper-time dd"><img src="image/b3.jpg" alt=""></div>
+                <div class="swiper-time dd"><img src="image/b4.jpg" alt=""></div>
+                <div class="swiper-time c"><img src="image/b5.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 简介 -->
+    <h1>
+        简介
+    </h1>
+    <div id="index_jianjie">
+        <div id="index_renwu">
+            <img src="image/z1.jpg" >
+        </div>
+        <div id="index_jieshao">
+            <h2>姚译添</h2>
+            <p>
+                姚译添，出生于1988年，毕业于浙江传媒学院，现任浙江卫视节目中心副主任，《奔跑吧》总导演…
+            </p>
+            <p>
+                2017年，姚译添领衔出演浙江卫视台歌《梦想天空分外蓝》“员工版”MV。2020年，成立浙江卫视节目中心“星图工作室”。2021年8月，担任奇趣实验真人秀《嗨放派》总导演…
+            </p>
+            <div id="index_gengudo">
+                <a href="">查看更多></a>
+            </div>
+        </div>
+    </div>
+    <!-- 主要作品 -->
+    <h1>
+        主要作品
+    </h1>
+    <div id="index_zuopin">
+        <ul>
+            <li>
+                <div id="zuopi_img">
+                    <img src="image/y1.jpg" alt="">
+                </div>
+                <p>
+                  奔跑吧
+                </p>
+               
+            </li>
+            <li>
+                <div id="zuopi_img">
+                    <img src="image/y2.jpg" alt="">
+                </div>
+                <p>
+                    嗨放派
+                </p>
+               
+            </li>
+            <li>
+                <div id="zuopi_img">
+                    <img src="image/y3.jpg" alt="">
+                </div>
+                <p>
+                  各位游客请注意
+                </p>
+             
+            </li>
+            <li>
+                <div id="zuopi_img">
+                    <img src="image/y4.jpg" alt="">
+                </div>
+                <p>
+              麦霸英雄汇
+                </p>
+               
+            </li>
+            <li>
+                <div id="zuopi_img">
+                    <img src="image/y5.jpg" alt="">
+                </div>
+                <p>
+                    爸爸回来了
+                </p>
+               
+            </li>
+        </ul>
+    </div>
+    <!-- 人物评价 -->
+    <div id="index_pingjia">
+        <div id="index_main">
+            <div id="index_main_right">
+                <img src="image/z2.jpg" alt="">
+            </div>
+            <div id="index_main_left">
+                <p>
+                    姚译添在综艺节目方面取得了很大的成就，他的才华和努力使他成为了一位备受尊重和崇拜的年轻导演。他的粉丝群体遍布全球，他的影响力也越来越大。他的未来发展前景令人期待，相信他会继续在综艺领域取得更多的成就。
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- 写真运用了js 中的dom操作切换块显示 -->
+    <h1>
+        生活照
+    </h1>
+    <div id="index_xiezhen">
+
+        <div id="left">
+            < </div>
+                <div id="right">
+                    >
+                </div>
+
+                <ul>
+                    <div id="one_xiezhen">
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image//1.jpg" alt="">
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/2.jpg" alt="">
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/3.jpg" alt="">
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/4.jpg" alt="">
+                            </div>
+                            
+                        </li>
+                    </div>
+                    <div id="two_xiezhen">
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/5.jpg" alt="">
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/6.jpg" alt="">
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/7.jpg" alt="">
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div id="xiezhen_img">
+                                <img src="image/8.jpg" alt="">
+                            </div>
+                           
+                        </li>
+                    </div>
+                </ul>
+        </div>
+        <!-- 底部版权运用js获取系统时间进行dom操作改变页面文字显示 -->
+        <footer>
+            <div id="footer">
+                <div id="logo2">
+                   姚译添
+                </div>
+                <div id="banquan">
+                    &copy;姚译添的主页
+                </div>
+               
+            </div>
+        </footer>
+</body>
+<script src="js/qiehuan.js"></script>
+<script src="js/lunbo.js"></script>
+<script src="js/menu.js"></script>
+</html>

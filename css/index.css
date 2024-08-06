@@ -1,0 +1,301 @@
+﻿.box {
+    position: relative;
+    width: 1000px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.swiper,
+#swiper {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiper div {
+    display: block;
+    position: absolute;
+    width: 650px;
+    height: 350px;
+    overflow: hidden;
+    left: 165px;
+    top: 0;
+    transition: 0.5s;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+
+}
+/* 设置轮播图片的宽度和高度为100% */
+.swiper div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 类名"a"的样式 */
+.swiper .a {
+    opacity: 1; /* 设置透明度为1 */
+    z-index: 23; /* 设置层级为23 */
+    -webkit-transform: translateX(255px) translateZ(-300px) rotateY(-45deg); /* 设置Webkit浏览器下的2D和3D变换 */
+    -ms-transform: translateX(255px) translateZ(-300px) rotateY(-45deg); /* 设置IE浏览器下的2D和3D变换 */
+    transform: perspective(500px) translateX(300px) translateZ(-253px) rotateY(-45deg); /* 设置通用的2D和3D变换 */
+    -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent), to(rgba(250, 250, 250, 0.3))); /* 设置Webkit浏览器下的倒影效果 */
+}
+
+/* 类名"b"的样式 */
+.swiper .b {
+    opacity: 1; /* 设置透明度为1 */
+    z-index: 33; /* 设置层级为33 */
+    -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent), to(rgba(250, 250, 250, 0.3))); /* 设置Webkit浏览器下的倒影效果 */
+    transform: translateX(0) translateZ(-100px) rotateY(0deg); /* 设置通用的2D和3D变换 */
+}
+
+/* 类名"c"的样式 */
+.swiper .c {
+    opacity: 1; /* 设置透明度为1 */
+    z-index: 23; /* 设置层级为23 */
+    -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, transparent), to(rgba(250, 250, 250, 0.3))); /* 设置Webkit浏览器下的倒影效果 */
+    -webkit-transform: translateX(255px) translateZ(-300px) rotateY(-45deg); /* 设置Webkit浏览器下的2D和3D变换 */
+    -ms-transform: translateX(255px) translateZ(-300px) rotateY(-45deg); /* 设置IE浏览器下的2D和3D变换 */
+    transform: perspective(500px) translateX(-300px) translateZ(-253px) rotateY(45deg); /* 设置通用的2D和3D变换 */
+}
+
+/* 类名"dd"的样式 */
+.swiper .dd {
+    opacity: 0; /* 设置透明度为0 */
+    z-index: -1; /* 设置层级为-1 */
+    -webkit-transform: translateX(0) translateZ(-300px) rotateY(0); /* 设置Webkit浏览器下的2D和3D变换 */
+    -ms-transform: translateX(0) translateZ(-300px) rotateY(0); /* 设置IE浏览器下的2D和3D变换 */
+    transform: perspective(500px) translateX(0) translateZ(-253px) rotateY(0); /* 设置通用的2D和3D变换 */
+}
+/* 响应式样式 */
+@media (max-width: 768px) {
+    .lunbodiv {
+        transform: scale(0.9); /* 小屏幕缩小 */
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lunbodiv {
+        transform: scale(0.4); /* 更小屏幕进一步缩小 */
+        margin-left: -200px;
+        margin-top: -120px;
+    }
+}
+#index_jianjie {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+#index_renwu {
+    display: inline-block;
+    height: 100%;
+
+}
+
+#index_renwu img {
+    height: 100%;
+}
+
+
+#index_jieshao {
+    display: inline-block;
+    float: right;
+    width: 380px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    border-bottom: 1px dotted #ccc;
+    line-height: 40px;
+    color: #111C18;
+    margin-bottom: 10px;
+}
+
+#index_jieshao p {
+    line-height: 30px;
+    text-indent: 32px;
+    color: #333;
+}
+
+#index_gengudo {
+    position: absolute;
+    background-color: #374340;
+    height: 30px;
+    width: 100px;
+    right: 20px;
+    bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#index_gengudo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#index_zuopin {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+#index_zuopin ul {
+    font-size: 0px;
+}
+
+#index_zuopin ul li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+#index_zuopin ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+#zuopi_img {
+    width: 200px;
+    height: 200px;
+}
+
+#zuopi_img img {
+    width: 200px;
+    height: 200px;
+}
+
+#index_zuopin ul li p:nth-child(2) {
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#index_zuopin ul li p:nth-child(3) {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(138, 137, 137);
+}
+
+#index_pingjia {
+    width: 100%;
+    background: url(../image/b5.jpg) no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    margin-top: 100px;
+    padding: 20px 0px;
+}
+
+#index_main {
+    width: 800px;
+    margin: 0 auto;
+    height: 200px;
+}
+
+#index_main_right {
+    display: inline-block;
+    float: right;
+}
+
+#index_main_right img {
+    height: 200px;
+    margin-left: 100px;
+}
+
+#index_main_left {
+    color: rgb(222, 222, 222);
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 0 100px;
+    padding-top: 40px;
+}
+
+#index_xiezhen {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#index_xiezhen ul {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+#index_xiezhen ul li {
+    display: inline-block;
+    width: 220px;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+#index_xiezhen ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+#xiezhen_img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#xiezhen_img img {
+    width: 100%;
+    height:280px;
+}
+
+#index_xiezhen ul li p:nth-child(2) {
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#index_xiezhen ul li p:nth-child(3) {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(138, 137, 137);
+}
+
+#left {
+    position: absolute;
+    height: 40px;
+    width: 20px;
+    background-color: rgba(114, 114, 114, 0.432);
+    text-align: center;
+    line-height: 40px;
+    top: 130px;
+    display: none;
+    cursor: pointer;
+}
+
+#right {
+    position: absolute;
+    height: 40px;
+    width: 20px;
+    background-color: rgba(114, 114, 114, 0.432);
+    text-align: center;
+    line-height: 40px;
+    top: 130px;
+    display: none;
+    right: 0px;
+    cursor: pointer;
+}
+
+#two_xiezhen {
+    display: none;
+}
